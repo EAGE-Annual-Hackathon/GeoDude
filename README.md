@@ -1,22 +1,35 @@
-![LOGO](https://github.com/DIG-Kaust/Project_Template/blob/master/logo.png)
+![LOGO](https://github.com/DIG-Kaust/GeoDude-Dev/blob/main/geodude.png)
 
-Reproducible material for **XXX -
-Ravasi M., Author M., Author C.** submitted to XXX.
+# GeoDude
+EAGE Hackathon - Natural Language Processing (NLP) <br>
+Corrales M., Luiken N., Alfarhan M.
+
+<br>
+
+The key concept behind this project is the utilization of [Llama loaders](https://llamahub.ai/), which facilitate the seamless integration of structured and unstructured data. These collectors are then used to create [Llama indexes](https://gpt-index.readthedocs.io/en/latest/), enabling in-context learning without the need for fine-tuning. This approach empowers efficient and effective information retrieval and analysis, enhancing the overall learning experience.
 
 
 ## Project structure
 This repository is organized as follows:
 
-* :open_file_folder: **package**: python library containing routines for ....;
-* :open_file_folder: **data**: folder containing data (or instructions on how to retrieve the data
-* :open_file_folder: **notebooks**: set of jupyter notebooks reproducing the experiments in the paper (see below for more details);
-* :open_file_folder: **scripts**: set of python scripts used to run multiple experiments ...
+* :open_file_folder: **package**: python library containing routines for geodude. 
+* :open_file_folder: **notebooks**: set of jupyter notebooks reproducing the experiments for the hackathon.
+* :open_file_folder: **notebooks/data_test**: folder containing geoscience data for the experiments.
+* :open_file_folder: **notebooks/data_petrobowl**: folder containing petrobowl data for alpaca fine-tuning.
 
 ## Notebooks
 The following notebooks are provided:
 
-- :orange_book: ``X1.ipynb``: notebook performing ...;
-- :orange_book: ``X2.ipynb``: notebook performing ...
+- :orange_book: ``01_Camel_Loading_PDF_Example_1.ipynb``: notebook performing 'in context' learning from a pdf provided. The model used is Camel 5B (Example 2).
+- :orange_book: ``01_Camel_Loading_PDF_Example_2.ipynb``: notebook performing 'in context' learning from a pdf provided. The model used is Camel 5B (Example 2).
+- :orange_book: ``01_GPT_Loading_PDF_Example_1.ipynb``: notebook performing 'in context' learning from a pdf provided. The model used is GPT from openai(Example 1).
+- :orange_book: ``01_GPT_Loading_PDF_Example_2.ipynb``: notebook performing 'in context' learning from a pdf provided. The model used is GPT from openai(Example 2).
+- :orange_book: ``02_Camel_Loading_Multiple_PDF_Example.ipynb``: notebook performing 'in context' learning from a set of pdf's. The model used is Camel 5B.
+- :orange_book: ``02_GPT_Loading_Multiple_PDF_Example.ipynb``: notebook performing 'in context' learning from a set of pdf's. The model used is GPT from openai.
+- :orange_book: ``03_Camel_Loading_Youtube_Example.ipynb``: notebook performing 'in context' learning from a youtube video. The model used is Camel 5B.
+- :orange_book: ``03_GPT_Loading_Youtube_Example.ipynb``: notebook performing 'in context' learning from a youtube video. The model used GPT from openai.
+- :orange_book: ``04_Gradio_Interface.ipynb``: notebook performing example for API generation using gradio.
+
 
 
 ## Getting started :space_invader: :robot:
@@ -37,13 +50,16 @@ pip install -e .
 
 Remember to always activate the environment by typing:
 ```
-conda activate my_env
+conda activate geodude
 ```
 
-Finally, to run tests simply type:
-```
-pytest
-```
 
-**Disclaimer:** All experiments have been carried on a Intel(R) Xeon(R) CPU @ 2.10GHz equipped with a single NVIDIA GEForce RTX 3090 GPU. Different environment 
-configurations may be required for different combinations of workstation and GPU.
+
+> **Note** <br>
+> All experiments have been carried on a Intel(R) Xeon(R) Silver 4316 CPU @ 2.30GHz equipped with a single NVIDIA TESLA A100 GPU. Different 
+> environment configurations may be required for different combinations of workstation and GPU.
+
+> **Warning** <br>
+> To simplify the process, we have utilized the model from OpenAI, requiring an API key. If you wish to replicate these notebooks, you can generate 
+> your [own API key](https://platform.openai.com/account/api-keys). This will allow you to access the necessary resources and execute the code
+> successfully.

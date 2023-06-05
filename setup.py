@@ -5,24 +5,23 @@ def src(pth):
     return os.path.join(os.path.dirname(__file__), pth)
 
 # Project description
-descr = 'My project description.'
+descr = 'EAGE Hackathon 2023 - NLP'
 
 setup(
-    name="package", # Choose your package name
+    name="geodude", # Choose your package name
     description=descr,
     long_description=open(src('README.md')).read(),
-    keywords=['inverse problems',
-              'deep learning',
-              'seismic'],
+    keywords=['NLP',
+              'LLM',
+              'Hackathon'],
     classifiers=[
         'Intended Audience :: Science/Research',
         'Natural Language :: English',
         'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
-        'Topic :: Scientific/Engineering :: Mathematics'
+        'Programming Language :: Python :: 3.9'
     ],
-    author='Matteo Ravasi, Second author, Third author',
-    author_email='matteo.ravasi@kaust.edu.sa, second.auth@kaust.edu.sa, third.auth@kaust.edu.sa',
+    author='Miguel Corrales, Nick Luiken, Mustafa Alfarhan',
+    author_email='miguel.corrales@kaust.edu.sa, nicolaas.luiken@kaust.edu.sa, mustafa.alfarhan@kaust.edu.sa',
     install_requires=['numpy >= 1.15.0',
                       'torch >= 1.2.0',
                       'pylops >= 1.17.0'],
