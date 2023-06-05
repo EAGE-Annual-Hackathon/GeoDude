@@ -1,8 +1,12 @@
-![LOGO](https://github.com/DIG-Kaust/GeoDude-Dev/blob/main/geodude.png)
+![LOGO](https://github.com/EAGE-Annual-Hackathon/GeoDude/blob/main/geodude.png)
 
 # GeoDude
-EAGE Hackathon - Natural Language Processing (NLP) <br>
-Corrales M., Luiken N., Alfarhan M.
+
+> **Unleashing the Power of LLM's for Geoscience Data**\
+> EAGE Hackathon - Natural Language Processing (NLP)\
+> Corrales M.<sup>1</sup>, Luiken N.<sup>1</sup>, Alfarhan M.<sup>1</sup>\
+> King Abdullah University of Science and Technology (KAUST)<sup>1</sup>\
+
 
 <br>
 
