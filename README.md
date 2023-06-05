@@ -5,7 +5,7 @@
 > **Unleashing the Power of LLM's for Geoscience Data**\
 > EAGE Hackathon - Natural Language Processing (NLP)\
 > Corrales M.<sup>1</sup>, Luiken N.<sup>1</sup>, Alfarhan M.<sup>1</sup>\
-> King Abdullah University of Science and Technology (KAUST)<sup>1</sup>
+> King Abdullah University of Science and Technology (KAUST)<sup>1</sup>\
 
 
 <br>
@@ -33,6 +33,8 @@ The following notebooks are provided:
 - :orange_book: ``03_Camel_Loading_Youtube_Example.ipynb``: notebook performing 'in context' learning from a youtube video. The model used is Camel 5B.
 - :orange_book: ``03_GPT_Loading_Youtube_Example.ipynb``: notebook performing 'in context' learning from a youtube video. The model used GPT from openai.
 - :orange_book: ``04_Gradio_Interface.ipynb``: notebook performing example for API generation using gradio.
+- :orange_book: ``05_Custom_Dataset_for_Alpaca.ipynb``: notebook performing the dataset creating needed for the alpaca lora fine-tunning.
+- :orange_book: ``06_Alpaca-fine-tuning.ipynb``: notebook performing the LoRA alpaca fine-tuning for the petrobowl dataset.
 
 
 
